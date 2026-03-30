@@ -1,2 +1,2 @@
 # Scripting Powershell
-echo "5m1th Security - OffSec Team"
+echo "RedScan Academy - Curso Red Team"
