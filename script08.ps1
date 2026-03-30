@@ -6,6 +6,6 @@ if(!$p1){
     echo "Modo de uso: .\script.ps1 192.168.0"
 } else {
 foreach ($ip in 1..254) {
-echo "Efetuando ping no host: $p1.$ip"
+echo "Disparando ping contra o target: $p1.$ip"
 }
 }
