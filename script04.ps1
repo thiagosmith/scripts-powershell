@@ -1,6 +1,6 @@
 # Scripting Powershell
-echo "Mentoria OffSec - Scripting PowerShell"
-echo "5m1th Security - OffSec Team"
-$ip = Read-host "Digite o IP"
-$port = Read-host "Digite a porta"
-echo "Analizando o alvo: $ip na porta: $port"
+echo "RedScan Academy - Curso Red Team"
+echo "5m1th - OffSec Team"
+$ip = Read-host "Informe o endereço de IP do alvo"
+$port = Read-host "Escolha a porta"
+echo "Atacando o alvo: $ip na porta: $port"
