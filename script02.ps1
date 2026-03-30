@@ -1,4 +1,4 @@
 # Scripting Powershell
-echo "Mentoria OffSec - Scripting PowerShell"
-echo "5m1th Security - OffSec Team"
-echo "meu diret�rio atual: $(pwd)"
+echo "RedScan Academy - Curso Red Team"
+echo "5m1th - OffSec Team"
+echo "Localização Atual: $(pwd)"
