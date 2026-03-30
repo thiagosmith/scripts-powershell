@@ -1,11 +1,13 @@
 # Scripting Powershell
 # Parsing Web
-$site = Read-Host "Digite o site: "
+echo "RedScan Academy - Curso Red Team"
+echo "5m1th - OffSec Team"
+$site = Read-Host "Digite o target: "
 $web = Invoke-WebRequest -uri "$site" -Method Options
-echo " o servidor roda: "
+echo " Tecnologia do Server: "
 $web.headers.server
 echo ""
-echo "o servidor aceita os metodos: "
+echo "Métodos aceitos: "
 $web.headers.allow
 echo ""
 echo "Links encontrados: "
