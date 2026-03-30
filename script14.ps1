@@ -8,8 +8,8 @@ if(!$ip){
 $topports = 21,22,445,80,53,443,81,8080,8008
 try {foreach ($porta in $topports){
 if (Test-NetConnection $ip -Port $porta -WarningAction SilentlyContinue -InformationLevel Quiet) {
-    echo "Porta $porta Aberta"
+    echo "Port $porta Opened"
 }} else {
-    echo "Porta $porta Fechada"
+    echo "Port $porta Closed"
 }} catch {}
 }
