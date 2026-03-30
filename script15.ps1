@@ -1,9 +1,12 @@
 # Scripting Powershell
+echo "RedScan Academy - Curso Red Team"
+echo "5m1th - OffSec Team"
+
 $web = Invoke-WebRequest -uri "http://scanme.org" -Method Options
-echo "o servidor roda: "
+echo "Tecnologia do Server: "
 $web.headers.server
 echo ""
-echo "o servidor aceita os metodos: "
+echo "Métodos aceitos: "
 $web.headers.allow
 echo ""
 echo "Links encontrados: "
