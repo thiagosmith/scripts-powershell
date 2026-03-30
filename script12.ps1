@@ -7,8 +7,8 @@ if(!$ip){
 } else {
 foreach ($porta in 1..1024){
 if (Test-NetConnection $ip -Port $porta -WarningAction SilentlyContinue -InformationLevel Quiet) {
-    echo "Porta $porta Aberta"
+    echo "Port $porta Opened"
 } else {
-    echo "Porta $porta Fechada"
+    echo "Port $porta Closed"
 }}
 }
