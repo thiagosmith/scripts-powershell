@@ -1,6 +1,6 @@
 # Scripting Powershell
-echo "Mentoria OffSec - Scripting PowerShell"
-echo "5m1th Security - OffSec Team"
-$ip = Read-Host "Digite o IP"
-echo "Efetuando ping no host: $ip"
+echo "RedScan Academy - Curso Red Team"
+echo "5m1th - OffSec Team"
+$ip = Read-Host "Informe o endereço de IP a ser detectado"
+echo "Detectando o alvo com endereço de IP: $ip"
 ping -n 1 $ip | Select-String "bytes=32"
