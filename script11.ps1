@@ -6,8 +6,8 @@ if(!$ip -or !$porta){
     echo "Modo de uso: .\script.ps1 192.168.0.1 80"
 }else {
 if (Test-NetConnection $ip -Port $porta -WarningAction SilentlyContinue -InformationLevel Quiet) {
-    echo "Porta Aberta"
+    echo "Port Opened"
 } else {
-    echo "Porta Fechada"
+    echo "Port Closed"
 }
 }
