@@ -14,9 +14,8 @@ foreach ($u in $usuarios) {
     Write-Host "Usuário $($u.Nome) criado."
 }
 
-# Sortear aleatoriamente um usuário para cada grupo
-$randomMgmt = Get-Random -InputObject $usuarios
-$randomRdp  = Get-Random -InputObject $usuarios
+# Sortear dois usuários distintos
+$randomMgmt, $randomRdp = Get-Random -InputObject $usuarios -Count 2
 
 # Adicionar ao grupo Remote Management Users
 Add-LocalGroupMember -Group "Remote Management Users" -Member $randomMgmt.Nome
